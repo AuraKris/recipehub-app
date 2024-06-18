@@ -187,7 +187,7 @@ img {
 
 .trend-cont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2em;
     margin-top: 1.5em;
 }
@@ -217,6 +217,9 @@ img {
         .recipeLkCnt, .recipeTaste {
             font-size: 0.8em;
             color: var(--text-light);
+        }
+        .view-rec-btn {
+            width: fit-content;
         }
     }
 }

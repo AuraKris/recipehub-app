@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HamMenu from "./HamMenu";
 import { useAuth } from "./AuthContext";
@@ -8,6 +8,7 @@ export default function NavBar() {
     const [showHamBtn, setHamBtn] = useState(false);
     const loc = useLocation();
     const { user, logout } = useAuth();
+    const navigate = useNavigate();
     const navlinks = [
         { name: "Home", path: "/", icon: "home" },
         { name: "Recipes", path: "/recipes", icon: "menu_book" },
@@ -43,7 +44,7 @@ export default function NavBar() {
         <>
             <div className="navbar container navbar-expand">
                 <Link to="/" className="weblogo">
-                    <img src="RH_logo2.png" alt=""></img>
+                    <img src={`${process.env.PUBLIC_URL}//RH_logo2.png`} alt=""></img>
                 </Link>
                 <div className="nav-items">
                     {navlinks.map(link => (

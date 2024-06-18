@@ -6,7 +6,7 @@ export default function RecCard({recipe}) {
         <div className="rec-card">
             <ResImg src={recipe.img} pt="60%"/>
             <div className="rec-card-info">
-                <img className="rec-creator-img" src={recipe.cookImg} alt=""/>
+                <img className="rec-creator-img" src={`${process.env.PUBLIC_URL}/${recipe.cookImg}`} alt=""/>
                 <h3 className="rec-card-title">{recipe.name}</h3>
                 <p className="rec-card-text">{recipe.desc}</p>
                 <Link to={`/recipes/${recipe.id}`} className="view-rec-btn btn">

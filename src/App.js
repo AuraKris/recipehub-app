@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Navbar from './pages/NavBar';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
@@ -23,7 +23,7 @@ function PrivateRoute({ children }) {
 
 function App() {
     return (
-        <Router>
+        <HashRouter>
             <AuthProvider>
                 <RecipesProvider>
                     <ForumProvider>
@@ -49,7 +49,7 @@ function App() {
                     </ForumProvider>
                 </RecipesProvider>
             </AuthProvider>
-        </Router>
+        </HashRouter>
     );
 }
 

@@ -16,7 +16,7 @@ export default function RecipePage({}){
         <div className="recipe-page">
             <div>
                 <h2>{recipe.name}</h2>
-                <img src={recipe.img} alt={recipe.name} />
+                <img src={`${process.env.PUBLIC_URL}/${recipe.img}`} alt={recipe.name} />
             </div>
             <div className="recipe-info">
                 <button onClick={() => setActiveTab("descriptions")} className={activeTab === "descriptions" ? "recipe-btn active" : "recipe-btn"}>Descriptions</button>

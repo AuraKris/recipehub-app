@@ -23,7 +23,7 @@ export default function Recipes() {
 
         if (searchQuery2 !== '') {
             const query2 = searchQuery2.toLowerCase();
-            updatedRecipes = updatedRecipes.filter(recipe => recipe.ingredient_list.toLowerCase().includes(query2));
+            updatedRecipes = updatedRecipes.filter(recipe => (recipe.ingredient_list.toLowerCase().includes(query2) || recipe.name.toLowerCase().includes(query2)));
         }
 
         if (categoryFilter !== '') {
@@ -39,20 +39,6 @@ export default function Recipes() {
 
         setFilteredRecipes(updatedRecipes);
     }, [searchQuery, searchQuery2, sortOrder, categoryFilter, recipes]);
-
-    // const handleSearchInputChange = (e) => {
-    //     setSearchQuery(e.target.value);
-    // };
-
-    // const handleSearchClick = (search) => {
-    //     setSearchQuery(search);
-    // };
-
-    // const handleSearchSubmit = () => {
-    //     if (searchQuery && !previousSearches.includes(searchQuery)) {
-    //         setPreviousSearches([searchQuery, ...previousSearches.slice(0, 7)]); // limit to last 8 searches
-    //     }
-    // };
 
     const handleSearchInputChange2 = (e) => {
         setSearchQuery2(e.target.value);
@@ -104,6 +90,10 @@ export default function Recipes() {
                                 <option value="Korean">Korean</option>
                                 <option value="Indonesian">Indonesian</option>
                                 <option value="Western">Western</option>
+                                <option value="European">European</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Japanese">Japanese</option>
+
                             </select>
                         </div>
                         <input type="text" placeholder="Search..." value={searchQuery2} onChange={handleSearchInputChange2}/>

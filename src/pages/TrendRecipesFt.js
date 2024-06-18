@@ -4,7 +4,7 @@ export default function trendRec({recipe}){
     return (
         <div className="trend-card">
             <div className="tc-img">
-                <img src={recipe.img} alt=""></img>
+                <img src={`${process.env.PUBLIC_URL}/${recipe.img}`} alt=""></img>
             </div>
             <div className="tc-info">
                 <h3 className="recipeTitle">{recipe.name}</h3>
