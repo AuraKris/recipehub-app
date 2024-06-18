@@ -9,8 +9,8 @@ export default function Sec2(){
         "Sit 12345o0123197",
         "Amet 1234512377", 
     ]
-    const handleExploreClick = () => {
-        navigate('/recipes');
+    const handleSignupClick = () => {
+        navigate('/joinus');
     };
 
     return(
@@ -23,7 +23,7 @@ export default function Sec2(){
                 { listOfWords.map((item, index) => (
                     <p className="word-item" key={index}>{item}</p>
                 ))}
-                <button className="btn" onClick={handleExploreClick}>Signup Now</button>
+                <button className="btn" onClick={handleSignupClick}>Signup Now</button>
             </div>
         </div>
     )
