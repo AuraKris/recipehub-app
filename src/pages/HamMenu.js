@@ -22,7 +22,10 @@ export default function HamMenu({navlinks, close}) {
                     </Link>
                 </>
             ) : (
-                <Link to="/joinus" className={loc.pathname === "/joinus" ? "active" : ""}>Join Us</Link>
+                <Link to="/joinus" className={loc.pathname === "/joinus" ? "hamlink active" : "hamlink"}>
+                    <Icon className="hamicon">login</Icon>
+                    Join Us
+                </Link>
             )}
         </div>
     )
