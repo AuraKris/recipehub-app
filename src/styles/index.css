@@ -224,6 +224,7 @@ img {
   font-size: 0.9em;
   line-height: 1.25;
   margin-bottom: 1em;
+  margin-right: 2em;
   text-align: justify;
 }
 .section .columns {
@@ -263,7 +264,7 @@ img {
   width: 100%;
 }
 .section.sec2 .columns.typog {
-  padding-left: 1em;
+  padding-left: 2em;
   overflow: hidden;
 }
 .section.sec2 .columns.typog .word-item {
@@ -303,6 +304,8 @@ img {
 
 .section.sec3 {
   display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 .section.sec3 .sec3-text {
   font-size: 1em;
@@ -314,6 +317,31 @@ img {
   font-style: italic;
   color: var(--text-light);
   margin-top: 1em;
+}
+
+.quote-container {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+
+.quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.quote.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.quote.fade-out {
+  opacity: 0;
 }
 
 .section.trend {
@@ -370,13 +398,36 @@ img {
   grid-template-columns: 2fr 1fr;
   grid-gap: 1em;
 }
-.footer .footer-sec p {
+
+.footer-sec p {
   font-size: 0.8em;
 }
-.footer .footer-sec .ftr-title {
+
+.ftr-title {
   font-weight: bold;
   margin-bottom: 0.5em;
   font-size: 1em;
+}
+
+.ftr-desc {
+  font-size: 14px;
+  color: #888;
+}
+
+.ftr-desc a {
+  color: #888;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.ftr-desc a:hover {
+  text-decoration: underline;
+}
+
+.icon-footer {
+  display: flex;
+  margin-top: 0.25em;
+  gap: 0.25em;
 }
 
 .history {

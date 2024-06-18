@@ -44,7 +44,7 @@ export default function NavBar() {
         <>
             <div className="navbar container navbar-expand">
                 <Link to="/" className="weblogo">
-                    <img src={`${process.env.PUBLIC_URL}//RH_logo2.png`} alt=""></img>
+                    <img src={`${process.env.PUBLIC_URL}//img/RH_Logo2.png`} alt=""></img>
                 </Link>
                 <div className="nav-items">
                     {navlinks.map(link => (

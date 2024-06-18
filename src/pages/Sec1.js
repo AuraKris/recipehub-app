@@ -22,7 +22,7 @@ export default function Sec1(){
         <div className="section gal">
             <div className="columns">
                 <h1 className="title">Welcome to RecipeHub</h1>
-                <p className="desc typog">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="desc typog">Welcome to RecipeHub, your gateway to a world of culinary delights! Whether you're a seasoned chef or a kitchen newbie, our app is designed to inspire and simplify your cooking journey. From mouthwatering mains to delectable desserts, you'll find a treasure trove of recipes crafted to satisfy every craving. Get ready to explore, cook, and create unforgettable meals right at your fingertips. Welcome aboard, and let's embark on a delicious adventure together!</p>
                 <button className="btn" onClick={handleExploreClick}>Explore Now</button>
             </div>
             <div className="columns gallery">

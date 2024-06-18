@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 export default function Sec2(){
     const navigate = useNavigate();
     const listOfWords = [
-        "Lorem 12345182973981723", 
-        "Ipsum 1234591823891623",  
-        "Dolor 1234591239813",  
-        "Sit 12345o0123197",
-        "Amet 1234512377", 
+        "Skill-Building Resources", 
+        "Chef Tips and Tricks",  
+        "Interactive Cooking Classes",  
+        "Ingredient Insights",
+        "Community Support", 
     ]
     const handleSignupClick = () => {
         navigate('/joinus');
