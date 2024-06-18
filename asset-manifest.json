@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/recipehub-app/static/css/main.246b2997.css",
-    "main.js": "/recipehub-app/static/js/main.18a64eea.js",
+    "main.js": "/recipehub-app/static/js/main.a4a4038b.js",
     "index.html": "/recipehub-app/index.html",
     "main.246b2997.css.map": "/recipehub-app/static/css/main.246b2997.css.map",
-    "main.18a64eea.js.map": "/recipehub-app/static/js/main.18a64eea.js.map"
+    "main.a4a4038b.js.map": "/recipehub-app/static/js/main.a4a4038b.js.map"
   },
   "entrypoints": [
     "static/css/main.246b2997.css",
-    "static/js/main.18a64eea.js"
+    "static/js/main.a4a4038b.js"
   ]
 }
